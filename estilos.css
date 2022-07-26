@@ -1,0 +1,128 @@
+*{
+padding: 0;
+margin: 0;
+}
+
+body{
+background-color: rgba(95, 158, 160, 0.897);
+}
+
+.Calc h1{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: -200px;
+    font-size: 50px;
+    left: -30px;
+}
+
+table{
+position: absolute;
+left: 8px;
+top: 70px;
+z-index: 100;
+animation-name: desliza;
+animation-duration: 700ms;
+}
+
+@keyframes desliza{
+    0%{
+        transform: translateX(500px);
+    }
+    
+    100%{
+        transform: translateX(8px);
+    }
+}
+
+.Calc{
+    background: rgb(54, 58, 58);
+    width: 210px;
+    height: 320px;
+    position: absolute;
+    left: 600px;
+    top: 200px;
+    padding: 12px;
+}
+
+.botao{
+padding: 15px 20px;
+
+}
+
+.botao:hover{
+    box-shadow: rgba(3, 101, 214, 0.884) 0px 0px 0px 3px;
+    cursor: pointer;
+}
+
+#container{
+    background: green;
+    width: 220px;
+    height: 50px;
+    position: absolute;
+    left: 7px;
+   
+    color: red;
+    font-size: 35px;
+    text-align: right;
+    top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* segredo*/
+
+.html{
+width: 200px;
+height: 200px;
+position: absolute;
+left: 100px;
+top: 100px;
+opacity: 0;
+}
+
+.css{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 100px;
+    top: 400px;
+    opacity: 0;
+}
+
+.js{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 1000px;
+    top: 100px;
+    opacity: 0;
+}
+
+.html:hover{
+    opacity: 1;
+    transition: 500ms;
+    }
+    
+    .css:hover{
+        transition: 500ms;
+        opacity: 1;
+    }
+    
+    .js:hover{
+        transition: 500ms;
+        opacity: 1;
+    }
